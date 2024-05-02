@@ -1,0 +1,14 @@
+.ahorcado {
+  text-align: center;
+}
+
+.ahorcadoImg {
+  background: url(/assets/1.jpg);
+  height: 300px;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.ahorcado button {
+  margin-bottom: 40px;
+}

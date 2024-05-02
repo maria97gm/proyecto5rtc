@@ -1,0 +1,55 @@
+/*Zona jugador*/
+.jugador {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: var(--rtc-gap-l);
+  padding: var(--rtc-padding-m);
+}
+
+.jugador img {
+  width: 100px;
+}
+
+.jugador img:hover {
+  border-radius: 50px;
+  border: 1px solid #fff;
+}
+
+/*Zona VS*/
+
+.vs-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 300px;
+}
+
+.eleccionJugador,
+.eleccionMaquina {
+  border: 2px solid #fff;
+  border-radius: 8px;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.score-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.player-score,
+.computer-score {
+  font-family: 'Nunito';
+  font-weight: 700;
+  color: #fff;
+  font-size: 26px;
+}

@@ -1,0 +1,20 @@
+#game {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--rtc-gap-m);
+  padding-top: var(--rtc-padding-xl);
+}
+
+#game button {
+  min-width: 230px;
+}
+
+#game button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}

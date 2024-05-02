@@ -1,0 +1,81 @@
+.card {
+  width: 100px;
+  height: 100px;
+  margin: var(--rtc-margin-s);
+  position: relative;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: var(--rtc-br);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  backface-visibility: hidden;
+  pointer-events: none;
+}
+
+.card .back {
+  border: 3px solid #05d1fe;
+}
+
+.card .back:hover {
+  border: 3px solid #05d1fe;
+}
+
+.card.flipped {
+  transform: rotateY(180deg) scaleX(-1);
+  transition: transform 0.5s ease;
+}
+.tablero {
+  padding-top: var(--rtc-padding-m);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  width: 80%;
+  gap: var(--rtc-gap-s);
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+.win {
+  text-align: center;
+  padding-top: var(--rtc-padding-xl);
+}
+
+/*Responsive memorygames*/
+
+@media screen and (max-width: 1199px) {
+  .tablero {
+    grid-template-columns: repeat(4, 1fr);
+    width: 50%;
+    padding-bottom: var(--rtc-padding-m);
+  }
+
+  .card {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .tablero {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
