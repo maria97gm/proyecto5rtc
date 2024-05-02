@@ -118,7 +118,7 @@ const youWin = (writeWord) => {
 
     const botonReiniciar = document.createElement('button')
     botonReiniciar.textContent = 'Reiniciar juego'
-    botonReiniciar.addEventListener('click', iniciarJuego)
+    botonReiniciar.addEventListener('click', start)
 
     divTablero.appendChild(mensajeVictoria)
     divTablero.appendChild(botonReiniciar)
@@ -132,7 +132,7 @@ const showWord = (writeWord, hiddenWord, divTablero) => {
 
     const button = document.createElement('button')
     button.textContent = 'Reiniciar juego'
-    button.addEventListener('click', iniciarJuego)
+    button.addEventListener('click', start)
 
     divTablero.innerHTML = ''
 
