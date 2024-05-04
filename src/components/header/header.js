@@ -12,25 +12,7 @@ export const createHeader = () => {
   logo.src = '/assets/favicon.png'
   myHeader.appendChild(logo)
   document.body.appendChild(myHeader)
-  createNav()
-}
-let clickButton
-const createNav = () => {
-  const myHeader = document.querySelector('header')
-
-  for (const game of games) {
-    const elementHeader = document.createElement('a')
-    elementHeader.textContent = game.name
-
-    if (game.name === 'Memory Game') {
-      clickButton = initMemoryGame
-    } else if (game.name === 'Piedra, Papel o Tijera') {
-      clickButton = initPpyt
-    } else if (game.name === 'Ahorcado') {
-      clickButton = initAhorcado
-    }
-
-    elementHeader.addEventListener('click', clickButton)
-    myHeader.appendChild(elementHeader)
-  }
+  logo.addEventListener('click', () => {
+    window.location.href = '/'
+  })
 }

@@ -13,6 +13,8 @@ export const initAhorcado = () => {
 }
 
 const start = () => {
+  errorCounter = 0
+
   limpiarTablero()
 
   const divTablero = document.createElement('div')

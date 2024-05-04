@@ -1,24 +1,19 @@
 header img {
   width: 5%;
-  height: 5%;
+}
+
+header img:hover {
+  cursor: pointer;
 }
 
 header {
-  display: flex;
   text-align: center;
-  align-items: center;
-  justify-content: space-around;
 }
 
 /*Responsive header*/
 
 @media screen and (max-width: 767px) {
-  header {
-    flex-direction: column;
-    gap: var(--rtc-gap-s);
-  }
   header img {
     width: 15%;
-    height: 15%;
   }
 }
