@@ -53,3 +53,12 @@
   color: #fff;
   font-size: 26px;
 }
+
+/*Responsive*/
+
+@media screen and (max-width: 767px) {
+  .score-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
